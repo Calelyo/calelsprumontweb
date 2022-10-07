@@ -1,3 +1,4 @@
+/*
 .App {
   text-align: center;
 }
@@ -35,4 +36,152 @@
   to {
     transform: rotate(360deg);
   }
+}
+*/
+
+/*
+.nombre {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+}
+*/
+
+*{
+  font-family: 'Roboto Slab', serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.App-header {
+  border: solid red 2px;
+  position: fixed;
+  width: 100%;
+  height: 4.4rem;
+  z-index: 100;
+}
+
+.App-header h1 {
+  float: left;
+  padding: 0px 00px;
+  margin: 10px 35px;
+  text-align: center;
+  margin: 10px 0px 0px 30px;
+  /*border: solid blue;*/
+}
+
+.App-header nav {
+  float: right;
+}
+
+.App-header nav ul {
+  list-style: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 1px 100px 0px 0px;
+}
+
+.App-header nav ul li {
+  float: right;
+}
+
+.App-header nav ul li a {
+  text-decoration: none;
+  display: block;
+  color: black;
+  padding: 5px;
+  margin: 16px 15px;
+  font-size: 18px;
+  /*border: solid green;*/
+}
+
+.App-header nav ul li a:hover {
+  text-decoration: none;
+  display: block;
+  color: rgb(253, 250, 250);
+  padding: 5px;
+  margin: 16px 15px;
+  background-color: rgb(97, 73, 73);
+  border-radius: 25% 10%;
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.hamburguesa{
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+
+  .App-header nav ul li a{
+    display: none;
+  }
+
+  .hamburguesa{
+    display: block;
+    padding: 0px;
+    margin: -14px 12px;
+    float: right;
+    transform: scale(0.6);
+  }
+  
+  .hamburguesa:hover {
+    cursor: pointer;
+    transform: scale(0.62);
+    filter: drop-shadow(-2px 1px 3px rgb(175, 175, 175));
+  }
+
+  .App-header.responsive nav {
+    float: right;
+    margin: 70px -90px 0px 0px;
+  }
+
+  .App-header.responsive nav ul {
+    margin: 0px -19px;
+    padding: 0;
+    background-color: rgb(137, 221, 137);
+    border-radius: 0px 0px 20px 20px;
+  }
+
+  .App-header.responsive nav ul li {
+    float: none;
+    padding: 5px 2px;
+  }
+
+  .App-header.responsive nav ul li a {
+    display: block;
+    padding: 0px;
+    margin: 0px 20px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .App-header.responsive nav ul li a:hover {
+    background-color: rgb(211, 171, 171);
+    border-radius: 25% 10%;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.2s;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 900px) {
+  .App-header nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: black;
+    padding: 5px;
+    margin: 18px 3px;
+    font-size: 15px;
+  }
+}
+
+.presentacion {
+  /*position: absolute;*/
+  /*margin-top: 70px;*/
+  width: 100vw;
+  height: 100vh;
 }

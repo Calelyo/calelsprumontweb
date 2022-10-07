@@ -1,0 +1,46 @@
+.conocimientos{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+}
+
+.conocimientosHeader{
+    /* margin-top: 4.4rem; */
+    /* position: absolute; */
+    padding-top: 4.4rem;
+}
+
+.conocimientosHeader h1{
+    margin-left: 5rem;
+    font-size: 1.8rem;
+}
+
+.conocimientosHeader p{
+        margin: auto 3rem;
+        text-align: center;
+}
+
+.conocimientosIconos{
+   /*
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    border: solid 1px black;
+    */
+    display: grid;
+    /*grid-template-columns: auto auto;*/
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    /*justify-content: space-around;*/
+    /*grid-template-rows: auto;*/
+    align-items: center;
+    border: solid  black 1px;
+    background-color: lightgreen;
+    margin: 5rem 8rem;
+    height: 60%;
+}
+
+.icono{
+    background-color: rgba(40, 146, 146, 0.315);
+    width: 30%;
+    margin: 0px auto;
+}

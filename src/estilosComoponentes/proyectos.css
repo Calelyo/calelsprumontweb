@@ -1,0 +1,74 @@
+.proyectos{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(214, 111, 111);
+}
+
+.proyectosHeader{
+     padding-top: 4.4rem;
+}
+
+.proyectosHeader h1{
+    margin-left: 5rem;
+    font-size: 1.8rem;
+}
+
+.proyectosBody{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+}
+
+.contenedorCarga{
+    /* background-color: brown; */
+    position: absolute;
+    top: 55%;
+    width: 60px;
+    height: 60px;
+}
+
+.carga{
+       position: absolute;
+       top: 2rem;
+       width: 60%;
+       height: 60%;
+       border: solid 8px transparent;
+       border-top-color: #1a10ff;
+       border-left-color: #1a10ff;
+       border-radius: 50%;
+       animation: cargando 1.5s cubic-bezier(0.16, 0.83, 0.53, 1.15) infinite;
+       /* animation: cargando 1.5s linear infinite; */
+}
+
+.carga2{
+    position: absolute;
+    top: 2.8rem;
+    left: 0.8rem;
+    width: 20%;
+    height: 20%;
+    border: solid 5px transparent;
+    border-bottom-color: #c90606;
+    border-right-color: #c90606;
+    border-radius: 50%;
+    animation: cargando 1.5s ease-in-out infinite;
+}
+
+@keyframes cargando {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cargando2 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}

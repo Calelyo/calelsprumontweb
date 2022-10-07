@@ -1,0 +1,55 @@
+/*
+.fototemp {
+    max-height: 50%;
+    margin-top: 140px;
+    margin-right: 20px;
+    float: right;
+}
+*/
+
+.presentacion{
+    display: flex;
+    align-items: center;
+    background-color: burlywood;
+}
+
+.infoPresentacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 400px;
+}
+
+.infoPresentacion img{
+    width: 50%;
+}
+
+.infoPresentacion p {
+    font-style: italic;
+}
+
+.infoPresentacion p{
+    margin-left: 30px;
+    font-size: 1.2rem;
+    /* word-spacing: -0.3rem; */
+    /* text-align: justify; */
+}
+
+.infoPresentacion button{
+    float: right;
+}
+
+.contenidoModal{
+    display: flex;
+    align-items: center;
+    height: 75%;
+}
+
+.contenidoModal img {
+    margin-left: 90px;
+}
+
+.contenidoModal p{
+    margin-right: 90px;
+    margin-left: 40px;
+}
