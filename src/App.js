@@ -15,6 +15,26 @@ function hamburguesa(){
   }
 }
 
+// function scroll(){
+//   console.log('Scroll Y: ' + window.scrollY);
+//   let presentacion = document.getElementById('presentacion');
+//   let conocimientos = document.getElementById('conocimientos');
+//   let proyectos = document.getElementById('proyectos');
+//   let contacto = document.getElementById('contacto');
+
+//   if(window.scrollY !== 0 && presentacion.className !== 'presentacionNav activo'){
+//     presentacion.className += ' activo'
+//   } else {
+//     presentacion.className = 'presentacionNav'
+//   }
+  
+//   // window.screenY !== 0 ? presentacion.className += ' activo' : presentacion.className = 'presentacionNav';
+//   // conocimientos.className === 'NOconocimientos' ? conocimientos.className += ' activo' : conocimientos.className = 'conocimientos';
+//   // proyectos.className === 'NOproyectos' ? proyectos.className += ' activo' : proyectos.className = 'proyectos';
+//   // contacto.className === 'NOcontacto' ? contacto.className += ' activo' : contacto.className = 'contacto';
+  
+// }
+
 function App() {
   return (
     <div className="App" id='app'>
@@ -24,17 +44,25 @@ function App() {
         <nav>
           <ul>
             <li><a href='/'>R</a></li>
-            <li><a href='#Contacto'>Contacto</a></li>
-            <li><a href='#Proyectos'>Proyectos</a></li>
-            <li><a href='#Conocimientos'>Conocimientos</a></li>
-            <li><a href='#Presentacion'>Presentacion</a></li>
+            <li><a href='#Contacto' id='contacto'>Contacto</a></li>
+            <li><a href='#Proyectos' id='proyectos'>Proyectos</a></li>
+            <li><a href='#Conocimientos' id='conocimientos'>Conocimientos</a></li>
+            <li><a href='#Presentacion' id='presentacion' className='presentacionNav'>Presentacion</a></li>
           </ul> 
         </nav>
       </header>
-      <Presentacion />
-      <Conocimientos />
-      <Proyectos />
-      <Contacto />
+        <div className='presentacion-index'>
+          <Presentacion />
+        </div>
+        <div className='conocimientos-index'>
+          <Conocimientos />
+        </div>
+        <div className='proyectos-index'>
+          <Proyectos />
+        </div>
+        <div className='contacto-index'>
+          <Contacto />
+        </div>
     </div>
   );
 }

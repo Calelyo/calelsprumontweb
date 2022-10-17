@@ -9,15 +9,21 @@
 
 .presentacion{
     display: flex;
+    position: relative;
     align-items: center;
-    background-color: burlywood;
+    /* background-color: rgb(65, 79, 197); */
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
 }
 
 .infoPresentacion{
     display: flex;
+    position: absolute;
     align-items: center;
     justify-content: center;
-    margin: 400px;
+    margin: 10rem;
+    /* padding: 161px; */
 }
 
 .infoPresentacion img{
@@ -26,17 +32,40 @@
 
 .infoPresentacion p {
     font-style: italic;
+    color: white;
 }
 
 .infoPresentacion p{
-    margin-left: 30px;
-    font-size: 1.2rem;
+    margin-left: 60px;
+    font-size: 2.2rem;
     /* word-spacing: -0.3rem; */
     /* text-align: justify; */
 }
 
 .infoPresentacion button{
+        /* float: left; */
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        cursor: pointer;
+        background-color: rgb(64 173 110);
+        padding: 0.4rem 1rem;
+        border: none;
+        border-radius: 8px;
+        box-shadow: -1px 2px 12px 0px;
+}
+
+.infoPresentacion button:hover{
     float: right;
+    cursor: pointer;
+    background-color: rgb(114, 194, 147);
+    /*padding: 0.5rem 1.1rem;*/
+    border: none;
+    border-radius: 8px;
+    /*font-size: 15px;*/
+    transform: scale(1.1);
+    transition: 0.2s;
+    box-shadow: -5px 5px 8px 1px;
 }
 
 .contenidoModal{
@@ -53,3 +82,15 @@
     margin-right: 90px;
     margin-left: 40px;
 }
+
+
+
+.diagonal{
+    height: 100%;
+    width: 100%;
+    /* align-items: center; */
+    background-color: rgb(47 37 112);
+    position: absolute;
+    transform: skewY(40deg);
+    /* z-index: 1000; */
+  }

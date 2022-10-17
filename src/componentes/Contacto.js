@@ -49,7 +49,9 @@ export default function Contacto(){
                     <input type="hidden" name="_next" value="http://localhost:3000/"></input>
                     <br/>
 
-                    <input className='inputForm' type='submit' value='Enviar'></input>
+                    <div className='cuadro2'></div>
+
+                    <input className='inputForm botonEnviar' type='submit' value='Enviar'></input>
                 </form>
             </div>
 

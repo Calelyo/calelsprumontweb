@@ -23,16 +23,36 @@ export default function Conocimientos(){
                 </p>
             </div>
             <div className='conocimientosIconos'>
-                <img src={ imggithub } className='icono' alt=''></img>
-                <img src={ imgjava } className='icono' alt=''></img>
-                <img src={ imgjavascript } className='icono' alt=''></img>
-                <img src={ imgnodejs } className='icono' alt=''></img>
-                <img src={ imgreact2 } className='icono' alt=''></img>
-                <img src={ imgsqlite } className='icono' alt=''></img>
-                <img src={ imgtableau } className='icono' alt=''></img>
-                <img src={ imgaftereffects } className='icono' alt=''></img>
-                <img src={ imgillustrator } className='icono' alt=''></img>
-                <img src={ imgpremierepro } className='icono' alt=''></img>
+                <div className='github'>
+                    <img src={ imggithub } className='icono' alt=''></img>
+                </div>
+                <div className='java'>
+                    <img src={ imgjava } className='icono' alt=''></img>
+                </div>
+                <div className='javascript'>
+                     <img src={ imgjavascript } className='icono' alt=''></img>
+                </div>
+                <div className='nodejs'>
+                    <img src={ imgnodejs } className='icono' alt=''></img>
+                </div>
+                <div className='react'>
+                    <img src={ imgreact2 } className='icono' alt=''></img>
+                </div>
+                <div className='sqlite'>
+                    <img src={ imgsqlite } className='icono' alt=''></img>
+                </div>
+                <div className='tableau'>
+                    <img src={ imgtableau } className='icono' alt=''></img>
+                </div>
+                <div className='aftereffects'>
+                    <img src={ imgaftereffects } className='icono' alt=''></img>
+                </div>
+                <div className='illustrator'>
+                    <img src={ imgillustrator } className='icono' alt=''></img>
+                </div>
+                <div className='premierepro'>
+                    <img src={ imgpremierepro } className='icono' alt=''></img>
+                </div>
             </div>
         </section>
     )

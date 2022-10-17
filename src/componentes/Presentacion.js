@@ -1,6 +1,6 @@
 import '../estilosComoponentes/presentacion.css'
 import React from "react";
-import fotoTemporal from '../img/fototemporal.JPG';
+import presentacion from '../img/Presentacion.jpg';
 import SobreMi from './SobreMi';
 import imgsobremi from '../img/sobremi.jpg'
 import { useModal } from '../hooks/useModal.js';
@@ -9,13 +9,18 @@ export default function Presentacion(){
     const [modalAbiertoSobreMi, abrirModalSobreMi, cerrarModalSobreMi] = useModal(false)
     return(
         <section className='presentacion' id='Presentacion'>
+            
+            
+            <div className='diagonal'></div>
+
             <div className='infoPresentacion'>
-                <img src={fotoTemporal} alt='Foto precentación' className='fototemp'></img>
+                <img src={presentacion} alt='Foto precentación' className='fototemp'></img>
                 <div className='frase-boton'>
                     <p>El trabajo en equipo es un ejemplo de como el todo es mucho más que la suma de las partes</p>
-                    <button onClick={ abrirModalSobreMi }>Sobre Mi</button>
                 </div>
+                <button onClick={ abrirModalSobreMi }>Sobre Mi</button>
             </div>
+            
                <SobreMi modalAbierto={ modalAbiertoSobreMi } cerrarModal={ cerrarModalSobreMi }>
                 <h1>
                     Sobre Mi

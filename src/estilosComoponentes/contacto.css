@@ -1,8 +1,9 @@
 .contacto{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    background-color: cadetblue;
-    position: absolute;
+    /* background-color: cadetblue; */
+   /*  position: absolute; */
+   position: relative;
 }
 
 .contactoHeader{
@@ -13,7 +14,7 @@
     margin-left: 5rem;
     font-size: 1.8rem;
 }
-
+/*
 .formulario{
     background-color: rgb(38, 77, 78);
     border-radius: 20px;
@@ -24,32 +25,96 @@
     height: 35%;
     margin: 15rem auto auto auto;
 }
+*/
 
 .formulario form{
+    position: relative;
+    overflow: hidden;
     align-items: center;
+    width: 420px;
+    margin: 5rem auto;
+    background-color: rgba(22, 102, 82, 0.5);
+    padding: 5rem;
+    /* border-radius: 0px 160px 0px 160px; */
+}
+
+.formulario form::after {
+    content: "";
+    position: absolute;
+    margin: -3% -28%;
+    width: 51%;
+    height: 26%;
+    transform: rotate(37deg);
+    background-color: #215432;
+    overflow: hidden;
+}
+
+.formulario .cuadro2:after {
+    content: "";
+    position: absolute;
+    margin: -81% 55%;
+    width: 50%;
+    height: 26%;
+    transform: rotate(37deg);
+    background-color: #215432;
     overflow: hidden;
 }
 
 .inputForm{
     text-align: center;
+    color: rgb(165, 16, 16);
+    font-size: 20px;
+    line-height: 25px;
+    background-color: #266e34;
+    border: 1px solid black;
+    padding: 1rem;
+    margin-bottom: 1rem;
     width: 100%;
+    box-sizing: border-box;
+}
+
+.inputForm:focus{
+    background-color: blue;
+}
+.inputForm::placeholder{
+    color: rgb(117, 9, 9);
 }
 
 form textarea{
     height: 10rem;
+    line-height: 150%;
+    resize: vertical;
 }
 
 .inputForm::placeholder{
     text-align: center;
 }
 
+.botonEnviar{
+    width: 30%;
+    padding: .5rem;
+    margin: 0px 36%;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(13, 68, 24);
+    border-radius: 10px;
+    box-shadow: -1px 2px 9px #00000045;
+}
+
+.botonEnviar:hover{
+    background-color: rgb(82, 117, 89);
+    box-shadow: -1px 2px 9px #0000009d;
+    transform: scale(1.1);
+    transition: 0.1s linear;
+}
+
 .contenedorIconosContacto{
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     display: flex;
     justify-content: center;
     position: absolute;
     width: 100%;
-    bottom: 0;
+    bottom: 2rem;
 }
 
 .contenedorIconosContacto a{
@@ -57,12 +122,12 @@ form textarea{
 }
 
 .contenedorIconosContacto img{
-    width: 10%;
+    width: 40%;
     margin: 1.5rem 2rem;
 }
 
 .contactoEmail{
-        /* margin: 0; */
+        margin: 0rem 3rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -75,6 +140,7 @@ form textarea{
 }
 
 .contactoLinkedIn{
+     margin: 0rem 3rem;
      display: flex;
      align-items: center;
      justify-content: center;
