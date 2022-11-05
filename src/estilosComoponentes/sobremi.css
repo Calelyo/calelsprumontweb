@@ -48,20 +48,108 @@
 
 .sobremi.modalabierto{
     display: flex;
+    animation: fondoNegroAnim 0.2s linear;
 }
 
 .modalsobremi{
     position: relative;
-    background-color: green;
+    display: flex;
+    /* background-color: rgb(47 37 112); */
+    background-color: #2f2977;
+    color: white;
     overflow: auto;
-    width: 50vw;
-    height: 45vh;
-    padding: 80px 140px;
+    /* width: 50vw;
+    height: 50vh; */
+    width: 60vw;
+    height: 60vh;
+    padding: 0vw 5vw;
     border-radius: 40px;
+    animation: modalAnim 0.2s cubic-bezier(0.45, 0.20, 0.6, 1);;
 }
+
+@keyframes modalAnim {
+    0%{
+        top: -50rem;
+    }
+    100%{
+        top: 0;
+    }
+}
+
+@keyframes fondoNegroAnim {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-height: 900px){
+    .modalsobremi{
+        width: 55%;
+        width: 75vw;
+        height: 55vh;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 751px){
+    .modalsobremi{
+        width: 60vw;
+        height: 75vh;
+        padding-top: 5vh;
+        padding-bottom: 0vh;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .modalsobremi{
+        width: 72vw;
+        height: 72vh;
+        padding-top: 5vh;
+        padding-bottom: 0vh;
+        /* margin-top: 4vh; */
+    }
+}
+
+@media screen and (max-height: 800px){
+    .modalsobremi{
+        width: 60vw;
+        height: 70vh;
+    }
+
+    @media screen and (max-width: 1000px){
+        .modalsobremi{
+            width: 29vw;
+            height: 70vh;
+            padding: 20px 70px;
+            margin-top: 30px;
+        }
+    }
+}
+
+/*      width: 50vw;
+        height: 75vh;
+        position: relative;
+        top: 2rem; */
+
+/* .modalsobremi h1{
+    position: absolute;
+    top: 51px;
+    left: 60px;
+    font-size: 1.5rem;
+} */
 
 .cerrarmodal{
     position: absolute;
-    top: 1rem;/*REVISAR*/
+    top: 0rem;/*REVISAR*/
     right: 1rem;/*REVISAR*/
+    transform: scale(0.4);
+    cursor: pointer;
+}
+
+.cerrarmodal:hover{
+    transform: scale(0.45);
+    filter: drop-shadow(-2px 4px 4px black);
+    transition: 0.1s linear;
 }

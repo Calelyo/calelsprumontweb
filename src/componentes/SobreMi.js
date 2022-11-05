@@ -1,4 +1,5 @@
 import '../estilosComoponentes/sobremi.css'
+import icoCerrarHamburguesa from '../img/ico/cerrarhamburguesa.png'
 import React from "react";
 
 export default function SobreMi( { children, modalAbierto, cerrarModal } ){
@@ -21,7 +22,9 @@ export default function SobreMi( { children, modalAbierto, cerrarModal } ){
             </div>
             */}
             <div className='modalsobremi' onClick={sinCierreEnDiv}>
-                <button className='cerrarmodal' onClick={ cerrarModal }>X</button>
+                {/* <button className='cerrarmodal' onClick={ cerrarModal }>
+                </button> */}
+                    <img src={icoCerrarHamburguesa} alt='cerrarhamburguesa' className='cerrarmodal' onClick={ cerrarModal }></img>
                 {children}
             </div>
         </section>

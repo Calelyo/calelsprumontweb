@@ -1,18 +1,21 @@
 .contacto{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     /* background-color: cadetblue; */
    /*  position: absolute; */
    position: relative;
+   overflow: hidden;
 }
 
 .contactoHeader{
-    padding-top: 4.4rem;
+    /* padding-top: 4.4rem; */
+    padding-top: var(--padding-header-componente);
 }
 
 .contactoHeader h1{
     margin-left: 5rem;
     font-size: 1.8rem;
+    color: white;
 }
 /*
 .formulario{
@@ -29,26 +32,28 @@
 
 .formulario form{
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     align-items: center;
-    width: 420px;
-    margin: 5rem auto;
-    background-color: rgba(22, 102, 82, 0.5);
-    padding: 5rem;
+    width: 25vw;
+    margin: 10vh auto;
+    /* background-color: rgba(22, 102, 82, 0.5); */
+    background-color: rgb(255 255 255 / 0%);
+    /* padding: 3rem 2rem 4rem; */
     /* border-radius: 0px 160px 0px 160px; */
 }
 
-.formulario form::after {
+/* .formulario form::after {
     content: "";
     position: absolute;
-    margin: -3% -28%;
-    width: 51%;
-    height: 26%;
+    margin: -10% -116%;
+    width: 200%;
+    height: 40%;
     transform: rotate(37deg);
-    background-color: #215432;
+    background-color: rgb(47 37 112);
     overflow: hidden;
-}
+} */
 
+/*
 .formulario .cuadro2:after {
     content: "";
     position: absolute;
@@ -59,29 +64,41 @@
     background-color: #215432;
     overflow: hidden;
 }
+*/
 
 .inputForm{
-    text-align: center;
-    color: rgb(165, 16, 16);
-    font-size: 20px;
+    text-align: start;
+    /* color: rgb(165, 16, 16); */
+    color: rgba(255, 255, 255);
+    font-size: 15px;
     line-height: 25px;
-    background-color: #266e34;
-    border: 1px solid black;
-    padding: 1rem;
+    /* background-color: #266e34; */
+    background-color: rgba(255, 255, 255, 0);
+    /* border: 1px solid black; */
+    border: rgb(47 37 112 / 70%) solid 4px;
+    box-shadow: 0px 0px 10px 0px rgb(97 85 175), 0px 0px 3px 0px rgb(130 116 225) inset;
+    border-radius: 8px;
+    padding: 0.6rem 0.4rem;
     margin-bottom: 1rem;
     width: 100%;
     box-sizing: border-box;
 }
 
-.inputForm:focus{
-    background-color: blue;
+.inputForm:focus,
+.inputForm:active{
+    background-color: rgb(32 60 132 / 35%);
+    outline: none;
+    transition: 0.2s linear;
+    border: rgb(47 37 112) solid 5px;
+    box-shadow: 0px 0px 0px 0px rgb(97 85 175);
 }
 .inputForm::placeholder{
-    color: rgb(117, 9, 9);
+    /*color: rgb(117, 9, 9);*/
+    color: rgba(255, 255, 255, 0.5);
 }
 
 form textarea{
-    height: 10rem;
+    height: 25vh;
     line-height: 150%;
     resize: vertical;
 }
@@ -90,64 +107,207 @@ form textarea{
     text-align: center;
 }
 
+.inputForm:-webkit-autofill,
+.inputForm:-webkit-autofill:hover,
+.inputForm:-webkit-autofill:focus,
+.inputForm:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: white;
+}
+
 .botonEnviar{
+    text-align: center;
     width: 30%;
     padding: .5rem;
+    font-size: 20px;
     margin: 0px 36%;
     cursor: pointer;
     border: none;
-    background-color: rgb(13, 68, 24);
+    /* background-color: rgb(13, 68, 24); */
+    background-color: rgb(76, 67, 134);
+    border: rgb(47 37 112) solid 1px;
     border-radius: 10px;
     box-shadow: -1px 2px 9px #00000045;
 }
 
 .botonEnviar:hover{
-    background-color: rgb(82, 117, 89);
-    box-shadow: -1px 2px 9px #0000009d;
-    transform: scale(1.1);
-    transition: 0.1s linear;
+    background-color: rgb(93, 82, 165);
+    box-shadow: -1px 3px 4px 1px #0000009d;
+    transform: scale(1.01);
+    transition: 0.08s linear;
 }
+
+.botonEnviar:active,
+.botonEnviar:focus{
+    background-color: rgb(103, 85, 221);
+    box-shadow: 0px 0px 0px 0px;
+    bottom: -2px;
+    transform: scale(1.01);
+    transition: 0.08s linear;
+    border: rgb(47 37 112) solid 1px;
+}
+
+
+/*-----------------------------------------*/
 
 .contenedorIconosContacto{
-    /*border: 1px solid black;*/
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-    bottom: 2rem;
-}
-
-.contenedorIconosContacto a{
-    display: contents;
-}
-
-.contenedorIconosContacto img{
-    width: 40%;
-    margin: 1.5rem 2rem;
-}
-
-.contactoEmail{
-        margin: 0rem 3rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-}
-
-.contactoEmail p {
-        /* display: none; */
+        /* background-color: rgb(253, 253, 253); */
+        background-color: rgb(47 37 112);
         position: absolute;
-        bottom: -1rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100vw;
+        /* height: 8%; */
+        bottom: 0;
 }
 
-.contactoLinkedIn{
-     margin: 0rem 3rem;
-     display: flex;
-     align-items: center;
-     justify-content: center;
+.contenedorIconosContacto div{
+    /* border-left: solid 1px white;
+    border-right: solid 1px white; */
+    /* margin: 20px 10px 0 10px; */
+    margin: 0px 5% 0px;
+    box-shadow: black 0px 8px 0px 0px;
 }
 
-.contactoLinkedIn p {
-    /* display: none; */
+.contenedorIconosContacto div:hover,
+.contenedorIconosContacto div:active,
+.contenedorIconosContacto div:focus{
+    box-shadow:  black 0px 8px 9px 0px;
+    transition: 0.1s linear;
+    cursor: pointer;
+}
+
+.iconoContacto{
+    transform: scale(0.5);
+    position: relative;
+    bottom: -0.5rem;
+}
+
+.iconoContacto:hover,
+.iconoContacto:active,
+.iconoContacto:focus{
+    /* transform: scale(0.7);
+    transition: 0.1s cubic-bezier(1, 1.65, 1, 1.76); */
+}
+
+.contenedorIconosContacto div p{
+    color: rgb(0, 0, 0);
+    margin: 0px 0px 10px 0px;
+    position: relative;
+    bottom: 1.3rem;
+}
+
+.contenedorIconosContacto div img{
+}
+
+.contactoEmail img {
+    transform: scale(0.6);
+    position: relative;
+    top: 10px;
+}
+
+.contactoGitHub img{
+    filter: invert(1);
+    transform: scale(0.52);
+    position: relative;
+    bottom: -5px;
+}
+
+.contactoEmail::before{
+    content: 'calelyo@gmail.com';
+    /* display: flex; */
     position: absolute;
-    bottom: -1rem;
+    bottom: 60px;
+    /* margin: 0; */
+    font-size: 0px;
+    color: white;
+    visibility: hidden;
+    transition: 0.2s ease-in-out;
+}
+
+.contactoEmail:hover::before{
+    visibility: visible;
+    filter: drop-shadow(0px 5px 1px black);
+    bottom: 7.3rem;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.contactoEmail:hover img,
+.contactoEmail:active img,
+.contactoEmail:focus img {
+    transform: scale(0.65);
+    transition: 0.1s cubic-bezier(1, 1.65, 1, 1.76);
+}
+
+.contactoGitHub:hover img,
+.contactoGitHub:active img,
+.contactoGitHub:focus img{
+    transform: scale(0.58);
+    transition: 0.1s cubic-bezier(1, 1.65, 1, 1.76);
+}
+
+.contactoLinkedIn:hover img,
+.contactoLinkedIn:active img,
+.contactoLinkedIn:focus img{
+    transform: scale(0.55);
+    transition: 0.1s cubic-bezier(1, 1.65, 1, 1.76);
+}
+
+.diagonal2 {
+    height: 100%;
+    width: 100%;
+    /* align-items: center; */
+    background-color: rgb(253 253 253 / 10%);
+    position: absolute;
+    transform: skewY(320deg);
+    /* z-index: 1000; */
+}
+
+@media screen and (max-width: 1000px) and (min-width: 751px) {
+    .formulario form{
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .formulario form{
+        width: 60vw;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .formulario form{
+        margin: 0vh auto;
+    }
+
+    .formulario form textarea{
+        height: 20vh;
+    }
+
+    .contenedorIconosContacto div{
+        margin: -10px 5% -10px;
+    }
+
+    .contactoEmail img {
+        transform: scale(0.5);
+    }
+    
+    .contactoGitHub img{
+        transform: scale(0.42);
+    }
+
+    .iconoContacto{
+        transform: scale(0.4);
+    }
+
+    .contenedorIconosContacto div{
+        margin: -22px 5% -26px;
+        /* border: solid; */
+        /* height: 95%; */
+        position: relative;
+        top: 0px;
+        transform: scale(0.6);
+    }
 }

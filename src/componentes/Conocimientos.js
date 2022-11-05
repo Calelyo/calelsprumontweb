@@ -1,14 +1,16 @@
 import '../estilosComoponentes/conocimientos.css'
-import imggithub from '../img/ico/github.png'
+import imgbootstrap from '../img/ico/bootstrap.png'
 import imgjava from '../img/ico/java.png'
 import imgjavascript from '../img/ico/javascript.png'
 import imgnodejs from '../img/ico/nodejs.png'
+import imggit from '../img/ico/git.png'
 import imgreact2 from '../img/ico/react2.png'
 import imgsqlite from '../img/ico/sqlite.png'
 import imgtableau from '../img/ico/tableau.png'
 import imgaftereffects from '../img/ico/aftereffects.png'
 import imgillustrator from '../img/ico/illustrator.png'
 import imgpremierepro from '../img/ico/premierepro.png'
+import imgphotoshop from '../img/ico/photoshop.png'
 
 export default function Conocimientos(){
     return(
@@ -16,42 +18,47 @@ export default function Conocimientos(){
             <div className='conocimientosHeader'>
                 <h1>Conocimientos</h1>
                 <p>
-                    En el desarrollo de software las tecnologías van evolucionando constantemente,
-                    por lo que es dificil decir que uno tiene dominio sobre tal lenguaje o framework.
-                    Sin embargo, acá dejo algunas de las tecnologías con las que he tenido experiencias y que se que puedo
-                    desenvolverme en ellas para dar vida a proyectos.
+                ¿Cuándo puede alguien decir que domina una tecnología? 
+                No lo se con exactitud, sin embargo, estas son algunas con las que he trabajado y estudiado, 
+                y puedo decir con certeza que puedo utilizar en el desarrollo de un proyecto.
                 </p>
             </div>
             <div className='conocimientosIconos'>
-                <div className='github'>
-                    <img src={ imggithub } className='icono' alt=''></img>
+                <div className='cont-inconos react'>
+                    <img src={ imgreact2 } className='icono' alt='react'></img>
                 </div>
-                <div className='java'>
-                    <img src={ imgjava } className='icono' alt=''></img>
+                <div className='cont-inconos javascript'>
+                     <img src={ imgjavascript } className='icono' alt='javascript'></img>
                 </div>
-                <div className='javascript'>
-                     <img src={ imgjavascript } className='icono' alt=''></img>
+                <div className='cont-inconos nodejs'>
+                    <img src={ imgnodejs } className='icono' alt='nodejs'></img>
                 </div>
-                <div className='nodejs'>
-                    <img src={ imgnodejs } className='icono' alt=''></img>
+                <div className='cont-inconos java'>
+                    <img src={ imgjava } className='icono' alt='java'></img>
                 </div>
-                <div className='react'>
-                    <img src={ imgreact2 } className='icono' alt=''></img>
+                <div className='cont-inconos git'>
+                    <img src={ imggit } className='icono' alt='git'></img>
                 </div>
-                <div className='sqlite'>
-                    <img src={ imgsqlite } className='icono' alt=''></img>
+                <div className='cont-inconos bootstrap'>
+                    <img src={ imgbootstrap } className='icono' alt='bootstrap'></img>
                 </div>
-                <div className='tableau'>
-                    <img src={ imgtableau } className='icono' alt=''></img>
+                <div className='cont-inconos sqlite'>
+                    <img src={ imgsqlite } className='icono' alt='sqlite'></img>
                 </div>
-                <div className='aftereffects'>
-                    <img src={ imgaftereffects } className='icono' alt=''></img>
+                <div className='cont-inconos tableau'>
+                    <img src={ imgtableau } className='icono' alt='tableau'></img>
                 </div>
-                <div className='illustrator'>
-                    <img src={ imgillustrator } className='icono' alt=''></img>
+                <div className='cont-inconos aftereffects'>
+                    <img src={ imgaftereffects } className='icono' alt='aftereffects'></img>
                 </div>
-                <div className='premierepro'>
-                    <img src={ imgpremierepro } className='icono' alt=''></img>
+                <div className='cont-inconos illustrator'>
+                    <img src={ imgillustrator } className='icono' alt='illustrator'></img>
+                </div>
+                <div className='cont-inconos premierepro'>
+                    <img src={ imgpremierepro } className='icono' alt='premierepro'></img>
+                </div>
+                <div className='cont-inconos photoshop'>
+                    <img src={ imgphotoshop } className='icono' alt='photoshop'></img>
                 </div>
             </div>
         </section>
