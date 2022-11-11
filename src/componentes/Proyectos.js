@@ -9,9 +9,9 @@ export default function Proyectos(){
             </div>
 
             <div className='proyectosBody'>
-                <p>Sección en desarrollo. Disculpe las molestias.</p>
+                <p className='en-desarrollo'>Sección en desarrollo. Disculpe las molestias.</p>
                 <div className='contenedorCarga'>
-                    <div className='carga'>{/*Esperando actulización...*/}</div>
+                    <div className='carga'></div>
                     <div className='carga2'></div>
                 </div>
             </div>

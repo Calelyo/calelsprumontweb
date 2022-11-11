@@ -1,17 +1,20 @@
 .proyectos{
     width: 100vw;
     height: 100vh;
-    /* background-color: rgb(214, 111, 111); */
 }
 
 .proyectosHeader{
-     /* padding-top: 4.4rem; */
-     padding-top: var(--padding-header-componente);
+    padding-top: var(--padding-header-componente);
 }
 
 .proyectosHeader h1{
-    margin-left: 5rem;
+    margin-left: 5.5vw;
     font-size: 1.8rem;
+    text-decoration: underline;
+    color: white;
+    text-decoration-thickness: from-font;
+    text-decoration-style: double;
+    font-weight: 100;
 }
 
 .proyectosBody{
@@ -24,14 +27,14 @@
 
 .proyectosBody p{
     text-align: center;
+    color: white;
 }
 
 .contenedorCarga{
-    /* background-color: brown; */
     position: absolute;
     top: 55%;
-    width: 60px;
-    height: 60px;
+    width: 4.2rem;
+    height: 4.2rem;
 }
 
 .carga{
@@ -44,7 +47,6 @@
        border-left-color: #1a10ff;
        border-radius: 50%;
        animation: cargando 1.5s cubic-bezier(0.16, 0.83, 0.53, 1.15) infinite;
-       /* animation: cargando 1.5s linear infinite; */
 }
 
 .carga2{

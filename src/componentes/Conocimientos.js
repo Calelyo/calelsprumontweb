@@ -19,46 +19,46 @@ export default function Conocimientos(){
                 <h1>Conocimientos</h1>
                 <p>
                 ¿Cuándo puede alguien decir que domina una tecnología? 
-                No lo se con exactitud, sin embargo, estas son algunas con las que he trabajado y estudiado, 
-                y puedo decir con certeza que puedo utilizar en el desarrollo de un proyecto.
+                No lo sé con exactitud, sin embargo, estas son algunas con las que he trabajado y estudiado, 
+                y puedo decir con certeza que las sé utilizar en el desarrollo de un proyecto.
                 </p>
             </div>
             <div className='conocimientosIconos'>
                 <div className='cont-inconos react'>
-                    <img src={ imgreact2 } className='icono' alt='react'></img>
+                    <img src={ imgreact2 } className='icono' alt='icono react'></img>
                 </div>
                 <div className='cont-inconos javascript'>
-                     <img src={ imgjavascript } className='icono' alt='javascript'></img>
+                     <img src={ imgjavascript } className='icono' alt='icono javascript'></img>
                 </div>
                 <div className='cont-inconos nodejs'>
-                    <img src={ imgnodejs } className='icono' alt='nodejs'></img>
+                    <img src={ imgnodejs } className='icono' alt='icono nodejs'></img>
                 </div>
                 <div className='cont-inconos java'>
-                    <img src={ imgjava } className='icono' alt='java'></img>
+                    <img src={ imgjava } className='icono' alt='icono java'></img>
                 </div>
                 <div className='cont-inconos git'>
-                    <img src={ imggit } className='icono' alt='git'></img>
+                    <img src={ imggit } className='icono' alt='icono git'></img>
                 </div>
                 <div className='cont-inconos bootstrap'>
-                    <img src={ imgbootstrap } className='icono' alt='bootstrap'></img>
+                    <img src={ imgbootstrap } className='icono' alt='icono bootstrap'></img>
                 </div>
                 <div className='cont-inconos sqlite'>
-                    <img src={ imgsqlite } className='icono' alt='sqlite'></img>
+                    <img src={ imgsqlite } className='icono' alt='icono sqlite'></img>
                 </div>
                 <div className='cont-inconos tableau'>
-                    <img src={ imgtableau } className='icono' alt='tableau'></img>
+                    <img src={ imgtableau } className='icono' alt='icono tableau'></img>
                 </div>
                 <div className='cont-inconos aftereffects'>
-                    <img src={ imgaftereffects } className='icono' alt='aftereffects'></img>
+                    <img src={ imgaftereffects } className='icono' alt='icono aftereffects'></img>
                 </div>
                 <div className='cont-inconos illustrator'>
-                    <img src={ imgillustrator } className='icono' alt='illustrator'></img>
+                    <img src={ imgillustrator } className='icono' alt='icono illustrator'></img>
                 </div>
                 <div className='cont-inconos premierepro'>
-                    <img src={ imgpremierepro } className='icono' alt='premierepro'></img>
+                    <img src={ imgpremierepro } className='icono' alt='icono premierepro'></img>
                 </div>
                 <div className='cont-inconos photoshop'>
-                    <img src={ imgphotoshop } className='icono' alt='photoshop'></img>
+                    <img src={ imgphotoshop } className='icono' alt='icono photoshop'></img>
                 </div>
             </div>
         </section>

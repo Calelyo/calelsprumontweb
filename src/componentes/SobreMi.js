@@ -6,25 +6,10 @@ export default function SobreMi( { children, modalAbierto, cerrarModal } ){
     const sinCierreEnDiv = (e) => e.stopPropagation();
     return(
         <section className={`sobremi ${modalAbierto && 'modalabierto'}`} onClick={ cerrarModal }>
-            {/*
-            <div className='modal'>
-                <button className='cerrarmodal'>X</button>
-                <h1>
-                    Sobre Mi
-                </h1>
-                <div className='contenido'>
-                    <img src={sobremi}></img>
-                    <p>
-                        Hola, soy un mono de 3 cabezas, vivo en La Isla Del Mono, pero nadie me ve excepto Guybrush
-                    </p>
-                </div>
-                {children}
-            </div>
-            */}
             <div className='modalsobremi' onClick={sinCierreEnDiv}>
-                {/* <button className='cerrarmodal' onClick={ cerrarModal }>
-                </button> */}
-                    <img src={icoCerrarHamburguesa} alt='cerrarhamburguesa' className='cerrarmodal' onClick={ cerrarModal }></img>
+                <picture>
+                    <img src={icoCerrarHamburguesa} alt='Cerrar modal' loading='lazy' className='cerrarmodal' onClick={ cerrarModal }></img>
+                </picture>
                 {children}
             </div>
         </section>

@@ -1,80 +1,38 @@
 .contacto{
     width: 100vw;
     height: 100vh;
-    /* background-color: cadetblue; */
-   /*  position: absolute; */
-   position: relative;
-   overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
 
 .contactoHeader{
-    /* padding-top: 4.4rem; */
     padding-top: var(--padding-header-componente);
 }
 
 .contactoHeader h1{
-    margin-left: 5rem;
+    margin-left: 5.5vw;
     font-size: 1.8rem;
     color: white;
+    text-decoration: underline;
+    text-decoration-thickness: from-font;
+    text-decoration-style: double;
+    font-weight: 100;
 }
-/*
-.formulario{
-    background-color: rgb(38, 77, 78);
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-    height: 35%;
-    margin: 15rem auto auto auto;
-}
-*/
 
 .formulario form{
     position: relative;
-    /* overflow: hidden; */
     align-items: center;
     width: 25vw;
     margin: 10vh auto;
-    /* background-color: rgba(22, 102, 82, 0.5); */
     background-color: rgb(255 255 255 / 0%);
-    /* padding: 3rem 2rem 4rem; */
-    /* border-radius: 0px 160px 0px 160px; */
 }
-
-/* .formulario form::after {
-    content: "";
-    position: absolute;
-    margin: -10% -116%;
-    width: 200%;
-    height: 40%;
-    transform: rotate(37deg);
-    background-color: rgb(47 37 112);
-    overflow: hidden;
-} */
-
-/*
-.formulario .cuadro2:after {
-    content: "";
-    position: absolute;
-    margin: -81% 55%;
-    width: 50%;
-    height: 26%;
-    transform: rotate(37deg);
-    background-color: #215432;
-    overflow: hidden;
-}
-*/
 
 .inputForm{
     text-align: start;
-    /* color: rgb(165, 16, 16); */
     color: rgba(255, 255, 255);
-    font-size: 15px;
-    line-height: 25px;
-    /* background-color: #266e34; */
+    font-size: 0.9rem;
+    line-height: 1.7rem;
     background-color: rgba(255, 255, 255, 0);
-    /* border: 1px solid black; */
     border: rgb(47 37 112 / 70%) solid 4px;
     box-shadow: 0px 0px 10px 0px rgb(97 85 175), 0px 0px 3px 0px rgb(130 116 225) inset;
     border-radius: 8px;
@@ -82,6 +40,7 @@
     margin-bottom: 1rem;
     width: 100%;
     box-sizing: border-box;
+    font-family: 'Lato';
 }
 
 .inputForm:focus,
@@ -93,7 +52,6 @@
     box-shadow: 0px 0px 0px 0px rgb(97 85 175);
 }
 .inputForm::placeholder{
-    /*color: rgb(117, 9, 9);*/
     color: rgba(255, 255, 255, 0.5);
 }
 
@@ -119,11 +77,10 @@ form textarea{
     text-align: center;
     width: 30%;
     padding: .5rem;
-    font-size: 20px;
+    font-size: 1.2rem;
     margin: 0px 36%;
     cursor: pointer;
     border: none;
-    /* background-color: rgb(13, 68, 24); */
     background-color: rgb(76, 67, 134);
     border: rgb(47 37 112) solid 1px;
     border-radius: 10px;
@@ -151,21 +108,16 @@ form textarea{
 /*-----------------------------------------*/
 
 .contenedorIconosContacto{
-        /* background-color: rgb(253, 253, 253); */
         background-color: rgb(47 37 112);
         position: absolute;
         display: flex;
         justify-content: center;
         text-align: center;
         width: 100vw;
-        /* height: 8%; */
         bottom: 0;
 }
 
 .contenedorIconosContacto div{
-    /* border-left: solid 1px white;
-    border-right: solid 1px white; */
-    /* margin: 20px 10px 0 10px; */
     margin: 0px 5% 0px;
     box-shadow: black 0px 8px 0px 0px;
 }
@@ -184,31 +136,20 @@ form textarea{
     bottom: -0.5rem;
 }
 
-.iconoContacto:hover,
-.iconoContacto:active,
-.iconoContacto:focus{
-    /* transform: scale(0.7);
-    transition: 0.1s cubic-bezier(1, 1.65, 1, 1.76); */
-}
-
 .contenedorIconosContacto div p{
     color: rgb(0, 0, 0);
-    margin: 0px 0px 10px 0px;
+    margin: 0 0 0.8rem 0;
     position: relative;
     bottom: 1.3rem;
-}
-
-.contenedorIconosContacto div img{
 }
 
 .contactoEmail img {
     transform: scale(0.6);
     position: relative;
-    top: 10px;
+    top: 0.8rem;
 }
 
 .contactoGitHub img{
-    filter: invert(1);
     transform: scale(0.52);
     position: relative;
     bottom: -5px;
@@ -216,11 +157,9 @@ form textarea{
 
 .contactoEmail::before{
     content: 'calelyo@gmail.com';
-    /* display: flex; */
     position: absolute;
-    bottom: 60px;
-    /* margin: 0; */
-    font-size: 0px;
+    bottom: 4.8rem;
+    font-size: 0;
     color: white;
     visibility: hidden;
     transition: 0.2s ease-in-out;
@@ -230,7 +169,7 @@ form textarea{
     visibility: visible;
     filter: drop-shadow(0px 5px 1px black);
     bottom: 7.3rem;
-    font-size: 12px;
+    font-size: 0.75rem;
     text-decoration: underline;
 }
 
@@ -258,11 +197,9 @@ form textarea{
 .diagonal2 {
     height: 100%;
     width: 100%;
-    /* align-items: center; */
     background-color: rgb(253 253 253 / 10%);
     position: absolute;
     transform: skewY(320deg);
-    /* z-index: 1000; */
 }
 
 @media screen and (max-width: 1000px) and (min-width: 751px) {
@@ -287,7 +224,7 @@ form textarea{
     }
 
     .contenedorIconosContacto div{
-        margin: -10px 5% -10px;
+        margin: -0.8rem 5% -0.8rem;
     }
 
     .contactoEmail img {
@@ -303,9 +240,7 @@ form textarea{
     }
 
     .contenedorIconosContacto div{
-        margin: -22px 5% -26px;
-        /* border: solid; */
-        /* height: 95%; */
+        margin: -1.3rem 5% -1.4rem;
         position: relative;
         top: 0px;
         transform: scale(0.6);

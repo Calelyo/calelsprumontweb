@@ -1,8 +1,8 @@
 import '../estilosComoponentes/contacto.css'
 import React, { useState } from 'react'
-import imggmail from '../img/ico/mail.png'
-import imglinekedin from '../img/ico/linkedin.png'
-import imggithub from '../img/ico/github.png'
+import imggmail from '../img/ico/mailblanco.png'
+import imglinekedin from '../img/ico/linkedinblanco.png'
+import imggithub from '../img/ico/githubblanco.png'
 
 export default function Contacto(){
 
@@ -21,19 +21,9 @@ export default function Contacto(){
     let mimail = 'calelyo@gmail.com';
 
     function mail(){
-        // if(window.confirm('¿Copiar mail al portapapeles?')){
-        //     return mimail;
-        // }
         navigator.clipboard.writeText(mimail)
         alert('Mail de Calel Sprumont (calelyo@gmail.com) copiado al portapapeles');
     }
-
-    /*
-    console.log('Nombre: ' + nombre)
-    console.log('Email: ' + email)
-    console.log('Contenido: ' + contenido)
-    */
-
     
     return(
         <section className='contacto' id='Contacto'>
@@ -45,28 +35,16 @@ export default function Contacto(){
             </div>
 
             <div className='formulario'>
-                <form action={ enviarMail() } method='POST' target='_blank'>
-                    {/*
-                    <label htmlFor='nombre'>Nombre</label>
-                    <br/>
-                    */}
+                <form action={ enviarMail() } method='POST' target='_blank' rel='noopener noreferrer'>
                     <input className='inputForm' type='text' name='nombre' id='nombre' placeholder='Nombre'  value={nombre} onChange={(e) => setNombre(e.target.value)} required></input>
                     <br/>
 
-                    {/*<label htmlFor='email'>Email</label>
-                    <br/>*/}
                     <input className='inputForm' type='email' name='email' id='email' placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} required></input>
                     <br/>
 
-                    {/*
-                    <label htmlFor='mensaje'>Mensaje</label>
-                    <br/>
-                    */}
                     <textarea className='inputForm' type='text' name='mensaje' id='mensaje' placeholder='Mensaje' value={contenido} onChange={(e)=> setContenido(e.target.value)} required></textarea>
                     <input type="hidden" name="_next" value="http://localhost:3000/"></input>
                     <br/>
-
-                    {/* {<div className='cuadro2'></div>} */}
 
                     <input className='inputForm botonEnviar' type='submit' value='Enviar'></input>
                 </form>
@@ -75,24 +53,21 @@ export default function Contacto(){
             <div className='contenedorIconosContacto'>
                 
                 <div className='contactoEmail' onClick={()=> {mail()}}>
-                    <a href='mailto:calelyo@gmail.com' target='_blank' rel="noreferrer">
-                        <img className='iconoContacto' src={imggmail} alt='Email' onClick={noCopiar}></img>
+                    <a href='mailto:calelyo@gmail.com' target='_blank' rel="noopener noreferrer">
+                        <img className='iconoContacto' src={imggmail} alt='icono email' onClick={noCopiar}></img>
                     </a>
-                    {/* {<p>calelyo@gmail.com</p>} */}
                 </div>
 
                 <div className='contactoLinkedIn'>
-                    <a href='https://www.linkedin.com/in/calelsprumont/' target='_blank' rel="noreferrer">
-                        <img className='iconoContacto' src={imglinekedin} alt='LinkedIn'></img>
+                    <a href='https://www.linkedin.com/in/calelsprumont/' target='_blank' rel="noopener noreferrer">
+                        <img className='iconoContacto' src={imglinekedin} alt='icono linkedIn' rel="noopener noreferrer"></img>
                     </a>
-                    {/* {<p>linkedin.com/in/calelsprumont/</p>} */}
                 </div>
 
                 <div className='contactoGitHub'>
-                    <a href='https://github.com/Calelyo/' target='_blank' rel="noreferrer">
-                        <img className='iconoContacto' src={imggithub} alt='GitHub'></img>
+                    <a href='https://github.com/Calelyo/' target='_blank' rel="noopener noreferrer">
+                        <img className='iconoContacto' src={imggithub} alt='icono gitHub'></img>
                     </a>
-                   {/* { <p>github.com/Calelyo/</p>} */}
                 </div>
 
             </div>
