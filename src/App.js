@@ -31,7 +31,7 @@ function App() {
       <header className="App-header" id='hamb'>
       {/* <h1 className='minombre'>Calel Sprumont</h1> */}
         <picture>
-          <img className='minombre' src={csdesarrollador} alt='Calel Sprumont desarrollador full stack'></img>
+        <a href='/'><img className='minombre' src={csdesarrollador} alt='Calel Sprumont desarrollador full stack'></img></a>
         </picture>
         <picture>
           <img src={icoHamburguesa} alt='Hamburguesa' id='hamburguesa' loading='lazy' className='hamburguesa' onClick={ () => hamburguesa() }></img>

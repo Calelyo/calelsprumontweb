@@ -12,6 +12,7 @@ export default function Contacto(){
 
     function enviarMail(){
         return "https://formsubmit.co/" + miCorreo
+        // b295c99260179911e423ae28877b5c6f
     }
 
     const [nombre, setNombre] = useState('');
@@ -22,7 +23,7 @@ export default function Contacto(){
 
     function mail(){
         navigator.clipboard.writeText(mimail)
-        alert('Mail de Calel Sprumont (calelyo@gmail.com) copiado al portapapeles');
+        alert("Mail de Calel Sprumont " + mimail + " copiado al portapapeles");
     }
     
     return(

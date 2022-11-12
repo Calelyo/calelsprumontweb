@@ -146,7 +146,7 @@ form textarea{
 .contactoEmail img {
     transform: scale(0.6);
     position: relative;
-    top: 0.8rem;
+    /* top: 0.8rem; */
 }
 
 .contactoGitHub img{
@@ -244,5 +244,15 @@ form textarea{
         position: relative;
         top: 0px;
         transform: scale(0.6);
+    }
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .contenedorIconosContacto div {
+        height: 15vh;
+    }
+
+    .botonEnviar{
+        width: 35%;
     }
 }
