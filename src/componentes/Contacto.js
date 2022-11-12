@@ -6,7 +6,7 @@ import imggithub from '../img/ico/githubblanco.png'
 
 export default function Contacto(){
 
-    const miCorreo = 'calelyo@gmail.com'
+    const miCorreo2 = 'calelyo@gmail.com'
 
     const noCopiar = (e) => e.stopPropagation();
 
