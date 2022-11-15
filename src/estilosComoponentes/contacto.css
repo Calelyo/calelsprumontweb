@@ -1,4 +1,217 @@
 .contacto{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.contacto-header{
+    display: flex;
+    align-items: center;
+}
+
+.contacto-header .contacto-titulo{
+    color: #35d688;
+    font-size: 3rem;
+    margin-top: 7%;
+    margin-bottom: 0;
+    margin-left: 8vw;
+    font-family: 'Lato black', sans-serif;
+}
+
+.formulario{
+    background-color: rgb(54 23 126);
+    margin: 3vw 30vw;
+    margin-left: -7%;
+    padding: 3rem 3rem;
+    height: 46%;
+    border-radius: 5rem;
+
+    padding-left: 40%;
+}
+
+.formulario form{
+    /* margin-left: 60%; */
+
+    /* position: relative; */
+    /* align-items: center; */
+    width: 25vw;
+    margin: 1vh auto;
+    /* background-color: rgb(255 255 255 / 0%); */
+}
+
+.input-formulario{
+    text-align: start;
+    color: rgba(255, 255, 255);
+    font-size: 0.9rem;
+    line-height: 1.7rem;
+    background-color: rgb(48 20 112);
+    border: white solid 1px;
+    border-radius: 8px;
+    padding: 0.6rem 0.4rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Lato';
+}
+
+.input-formulario:focus,
+.input-formulario:active{
+    background-color: rgb(32 60 132 / 35%);
+    outline: none;
+    transition: 0.2s linear;
+    border: white solid 2px;
+    box-shadow: 0px 0px 0px 0px rgb(97 85 175);
+}
+
+.input-formulario::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+
+.formulario form textarea{
+    height: 25vh;
+    line-height: 150%;
+    resize: vertical;
+}
+
+.input-formulario:-webkit-autofill,
+.input-formulario:-webkit-autofill:hover,
+.input-formulario:-webkit-autofill:focus,
+.input-formulario:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: white;
+}
+
+.boton-enviar{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    width: 30%;
+    padding: .2rem;
+    font-size: 1.2rem;
+    margin: 0px 36%;
+    cursor: pointer;
+    border: none;
+    background-color: #721AD8;
+    border-radius: 10px;
+    box-shadow: 0px 4px 1px #45094F;
+}
+
+.boton-enviar:hover,
+.boton-enviar:focus{
+    background-color: #8e4ed8;
+    animation: boton-hover-anim 0.2s linear;
+}
+
+.boton-enviar:active{
+    margin-top: 0.1rem;
+    box-shadow: 0px 0px 0px 0px;
+}
+
+@keyframes boton2-hover-anim {
+    0%{
+        transform: translate(3px);
+        transform: rotate(-3deg);
+    }
+    25%{
+        transform: translate(-3px);
+        transform: rotate(3deg);
+    }
+    50%{
+        transform: translate(2px);
+        transform: rotate(-2deg);
+    }
+    75%{
+        transform: translate(-2px);
+        transform: rotate(2deg);
+    }
+    100%{
+        transform: translate(0px);
+        transform: rotate(0deg);
+    }
+}
+
+.contenedor-iconos-contacto{
+    background-color: rgb(47 37 112);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    bottom: 0;
+}
+
+.contenedor-iconos-contacto div{
+    margin: 0px 5% 0px;
+    box-shadow: black 0px 8px 0px 0px;
+}
+
+.contenedor-iconos-contacto div:hover,
+.contenedor-iconos-contacto div:active,
+.contenedor-iconos-contacto div:focus{
+    box-shadow:  black 0px 8px 9px 0px;
+    transition: 0.1s linear;
+    cursor: pointer;
+}
+
+.icono-contacto{
+    transform: scale(0.5);
+    position: relative;
+    bottom: -0.5rem;
+}
+
+.contacto-email img {
+    transform: scale(0.6);
+    position: relative;
+}
+
+.contacto-gitHub img{
+    transform: scale(0.52);
+    position: relative;
+    bottom: -5px;
+}
+
+.contacto-email::before{
+    content: 'calelyo@gmail.com';
+    position: absolute;
+    bottom: 4.8rem;
+    font-size: 0;
+    color: #2f2570;
+    visibility: hidden;
+    transition: 0.2s ease-in-out;
+    font-family: 'lato black';
+}
+
+.contacto-email:hover::before{
+    visibility: visible;
+    filter: drop-shadow(0px 3px 5px black);
+    bottom: 7.3rem;
+    font-size: 0.75rem;
+    text-decoration: underline;
+}
+
+.contacto-email:hover img,
+.contacto-email:active img,
+.contacto-email:focus img {
+    transform: scale(0.65);
+    transition: 0.1s cubic-bezier(1, 1.65, 1, 1.76);
+}
+
+.contacto-gitHub:hover img,
+.contacto-gitHub:active img,
+.contacto-gitHub:focus img{
+    transform: scale(0.58);
+    transition: 0.1s cubic-bezier(1, 1.65, 1, 1.76);
+}
+
+.contacto-linkedIn:hover img,
+.contacto-linkedIn:active img,
+.contacto-linkedIn:focus img{
+    transform: scale(0.55);
+    transition: 0.1s cubic-bezier(1, 1.65, 1, 1.76);
+}
+
+/* .contacto{
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -105,8 +318,6 @@ form textarea{
 }
 
 
-/*-----------------------------------------*/
-
 .contenedorIconosContacto{
         background-color: rgb(47 37 112);
         position: absolute;
@@ -146,7 +357,6 @@ form textarea{
 .contactoEmail img {
     transform: scale(0.6);
     position: relative;
-    /* top: 0.8rem; */
 }
 
 .contactoGitHub img{
@@ -255,4 +465,4 @@ form textarea{
     .botonEnviar{
         width: 35%;
     }
-}
+} */

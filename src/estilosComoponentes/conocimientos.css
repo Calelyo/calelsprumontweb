@@ -1,4 +1,108 @@
 .conocimientos{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.conocimientos-header{
+    /* display: inline; */
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conocimientos-header .conociminetos-titulo{
+    color: #35d688;
+    font-size: 3rem;
+    margin-top: 7%;
+    margin-bottom: 0;
+    /* margin-left: 3vw; */
+    /* position: absolute; */
+    /* bottom: 0px; */
+    /* left: 10vw; */
+    font-family: 'Lato black', sans-serif;
+}
+
+.conocimientos-header .conociminetos-texto{
+    /* position: relative; */
+    margin-top: 9%;
+    margin-bottom: 0;
+    margin-left: 8vw;
+    width: 50%;
+    /* margin-left: 37vw; */
+    /* position: absolute; */
+    font-size: 1.1rem;
+    color: #36177e;
+}
+
+.conocimientos-iconos{
+    display: grid;
+    background-color: rgb(54 23 126);
+    grid-template-columns: repeat(auto-fit, minmax(10vw, 1fr));
+    grid-gap: 1rem 3rem;
+    margin: 3vw 17vw;
+    /* margin-left: -7%; */
+    margin-right: -7%;
+    padding: 3rem 3rem;
+    /* padding-left: 37%; */
+    padding-right: 37%;
+    height: 60%;
+    border-radius: 5rem;
+    /* align-items: center; */
+}
+
+.cont-iconos{
+    align-items: center;
+    display: grid;
+    grid-template-rows: 0 auto;
+    margin: 0 auto;
+}
+
+.cont-iconos:before{
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
+    text-align: center;
+    bottom: -4rem;
+    visibility: hidden;
+    transform: scale(0);
+}
+
+.bootstrap::before{content: "Bootstrap";} .git::before{content: "Git";} .java::before{content: "Java";} .javascript::before{content: "JavaScript";}
+.nodejs::before{content: "NodeJS";} .react::before{content: "React";} .sqlite::before{content: "SQLite";}
+.tableau::before{content: "Tableau";} .aftereffects::before{content: "After Effects";} .illustrator::before{content: "Illustrator";}
+.premierepro::before{content: "PremierePro";} .photoshop::before{content: "Photoshop";}
+
+.cont-iconos:hover:before,
+.cont-iconos:focus:before,
+.cont-iconos:active:before{
+    bottom: 0.8rem;
+    visibility: visible;
+    transition: linear 0.2s;
+    transform: scale(1);
+}
+
+.icono{
+    background-color: rgba(255, 255, 255, 0.863);
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.icono:hover,
+.icono:active,
+.icono:focus{
+    background: rgba(250, 250, 250, 80);
+    transform: scale(1.2);
+    box-shadow: -5px 7px 14px 0px #000000c2;
+    padding: 1px;
+    cursor: none;
+    transition: 0.2s;
+}
+
+
+
+/* .conocimientos{
     position: relative;
     height: 100vh;
     color: white;
@@ -128,7 +232,6 @@
     }
 
     .conocimientosIconos div{
-        /* margin: -0.8rem auto; */
         margin: 0 -1rem;
         transform: scale(0.7);
     }
@@ -175,4 +278,4 @@
         transform: scale(0.7);
     }
   
-  }
+  } */

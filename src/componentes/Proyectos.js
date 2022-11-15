@@ -4,15 +4,15 @@ export default function Proyectos(){
 
     return(
         <section className='proyectos' id='Proyectos'>
-            <div className='proyectosHeader'>
-                <h1>Proyectos</h1>
+            <div className='proyectos-header'>
+                <h1 className='proyectos-titulo'>PROYECTOS</h1>
             </div>
 
-            <div className='proyectosBody'>
-                <p className='en-desarrollo'>Sección en desarrollo. Disculpe las molestias.</p>
-                <div className='contenedorCarga'>
-                    <div className='carga'></div>
-                    <div className='carga2'></div>
+            <div className='proyectos-body'>
+                <p className='proyectos-frase'>Sección en desarrollo. Disculpe las molestias.</p>
+                <div className='contenedor-carga'>
+                    <div className='carga-uno'></div>
+                    <div className='carga-dos'></div>
                 </div>
             </div>
         </section>

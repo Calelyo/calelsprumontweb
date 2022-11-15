@@ -27,18 +27,16 @@ function hamburguesa(){
 function App() {
   return (
     <div className="App" id='app'>
+      <header className="App-header">
       <div id='cerrarMenu' className='cerrarMenu' onClick={ () => hamburguesa() }></div>
-      <header className="App-header" id='hamb'>
-      {/* <h1 className='minombre'>Calel Sprumont</h1> */}
-        <picture>
-        <a href='/'><img className='minombre' src={csdesarrollador} alt='Calel Sprumont desarrollador full stack'></img></a>
-        </picture>
-        <picture>
+        {
+        /* <picture>
           <img src={icoHamburguesa} alt='Hamburguesa' id='hamburguesa' loading='lazy' className='hamburguesa' onClick={ () => hamburguesa() }></img>
           <img src={icoCerrarHamburguesa} alt='Cerrar hamburguesa' id='hamburguesaCierre' loading='lazy' className='hamburguesaCierre' onClick={ () => hamburguesa() }></img>
-        </picture>
+        </picture> */
+        }
         
-        <nav>
+        <nav className='barra-navegacion'>
           <ul>
             {/* <li><a href='/' onClick={ () => hamburguesa() }>R</a></li> */}
             <li><a href={ cv } title='curriculum vitae' target='_blank' rel='noopener noreferrer'>CV</a></li>
@@ -51,18 +49,14 @@ function App() {
       </header>
 
 
-      <div className='presentacion-index'>
-        <Presentacion />
-      </div>
-      <div className='conocimientos-index'>
-        <Conocimientos />
-      </div>
-      <div className='proyectos-index'>
-        <Proyectos />
-      </div>
-       <div className='contacto-index'>
-        <Contacto />
-      </div>
+      
+      <Presentacion />
+        
+      <Conocimientos />
+
+      <Proyectos />
+      
+      <Contacto />
 
 
     </div>
