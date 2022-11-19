@@ -1,6 +1,126 @@
 .info-presentacion{
     height: 100vh;
     width: 100%;
+
+    box-sizing: border-box;
+    /* border: solid ; */
+
+    display: flex;
+}
+
+.info-texto-presentacion{
+    box-sizing: border-box;
+    padding-top: 11rem;
+    /* border: solid red; */
+}
+
+.contenedor-foto-presentacion{
+
+    /* margin: auto 0; */
+
+    padding-top: 8rem;
+    /* padding-top: 10%; */
+    z-index: 1;
+
+    box-sizing: border-box;
+    /* border: solid green; */
+}
+
+.info-presentacion img{
+    max-width: calc(18vh + 30vw);
+    z-index: 1;
+    padding-right: 2rem;
+
+    
+    /* border: solid ; */
+}
+
+.mi-info{
+    background-color: #36177e;
+    border-radius: 0px 5px 90px 0px;
+    position: absolute;
+    width: 75vw;
+}
+
+.mi-info h1{
+    color: white;
+}
+
+.mi-info .mi-nombre{
+    color: #35d688;
+    font-size: 4vw;
+    /* font-size: clamp(2rem, 5vw, 4rem); */
+    text-align: end;
+    margin: 1rem 0 0 0;
+    margin-right: 28%;
+}
+
+
+.mi-info .mi-trabajo{
+    color: #d82d1e;
+    font-size: 2vw;
+    /* font-size: clamp(1rem, 2vw, 4rem); */
+    font-family: 'Lato thin', sans-serif;
+
+    
+    
+    text-align: end;
+    margin: 0 0 2rem 0;
+    margin-right: 28%;
+}
+
+.frase-presentacion p{
+    color: #36177e;
+    /* font-size: calc(1.2rem  + 1.2vw); */
+    font-size: clamp(2rem, 3vw, 8rem);
+    font-style: italic;
+    font-weight: 600;
+    text-align: end;
+    margin-right: 6%;
+    margin-left: 10%;
+}
+
+
+.boton-presentacion{
+    padding-top: calc(2rem + 20%);
+
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 6%;
+}
+
+.boton-presentacion button{
+    color: white;
+    background-color: #721AD8;
+    font-family: 'Lato', sans-serif;
+    padding: 6px 14px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 4px 1px #45094F;
+    margin-top: 1.2rem;
+    cursor: pointer;
+}
+
+.boton-presentacion button:hover,
+.boton-presentacion button:focus{
+    background-color: #8e4ed8;
+    animation: boton-hover-anim 0.3s linear;
+}
+
+
+.boton-presentacion button:active{
+    box-shadow: 0px 1px 0px #45094F;
+    margin-top: 1.3rem;
+}
+
+
+.frase-presentacion{
+    padding-top: 0;
+}
+
+/* .info-presentacion{
+    height: 100vh;
+    width: 100%;
 }
 
 .info-presentacion img{
@@ -35,13 +155,11 @@
 
 .mi-info .mi-nombre{
     color: #35d688;
-    /* font-size: 3.8rem; */
     font-size: 4vw;
     margin-top: 0.5rem;
 }
 .mi-info .mi-trabajo{
     color: #d82d1e;
-    /* font-size: 2rem; */
     font-size: 2vw;
     margin-bottom: 1rem;
     font-family: 'Lato thin', sans-serif;
@@ -56,7 +174,6 @@
 
 .frase-presentacion p{
     color: #36177e;
-    /* font-size: 2.2vw; */
     font-size: calc(1.2rem  + 1.2vw);
     font-style: italic;
     font-weight: 600;
@@ -89,7 +206,7 @@
 
 .boton-presentacion button:active{
     box-shadow: 0px 1px 0px #45094F;
-}
+} */
 
 @keyframes boton-hover-anim {
     0%{
@@ -132,6 +249,86 @@
     font-size: 1.2rem;
     line-height: 1.5rem;
 }
+
+
+
+@media screen and (max-width: 960px){
+    .info-presentacion{
+        flex-direction: column;
+    }
+
+    .info-texto-presentacion{
+        padding-top: 8rem;
+    }
+
+    .mi-info{
+        border-radius: 0;
+        width: 100vw;
+    }
+
+    .mi-info .mi-nombre{
+        text-align: center;
+        margin-right: auto;
+        font-size: 6vw;
+    }
+
+    .mi-info .mi-trabajo{
+        text-align: center;
+        margin-right: auto;
+        margin: 0.1rem 0px 1.3rem 0;
+        font-size: 3vw;
+    }
+
+    .boton-presentacion{
+        padding-top: calc(0.8rem + 15%);
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 0;
+        position: relative;
+        right: 2rem;
+        top: -8px;
+    }
+
+    .contenedor-foto-presentacion{
+        padding-top: 0;
+        display: flex;
+        position: relative;
+        /* top: -2%; */
+        justify-content: center;
+        z-index: -1;
+    }
+
+    .info-presentacion img{
+        max-width: calc(18vh + 40vw);
+        padding-right: 0;
+        position: absolute;
+        top: -4rem;
+    }
+
+    .frase-presentacion{
+        margin: 0;
+        position: relative;
+    }
+
+    .frase-presentacion p{
+        font-size: clamp(1.3rem, 3vw, 3rem);
+        margin: 0;
+        margin-right: 5.2rem;
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 16rem;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    
+}
+
+
 
 /* .presentacion{
     display: flex;

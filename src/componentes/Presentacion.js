@@ -11,29 +11,29 @@ export default function Presentacion(){
         <section className='presentacion' id='Presentacion'>
             
             <div className='info-presentacion'>
-                <picture>
-                     <img src={presentacion} alt='Foto presentación' loading='lazy' className='fototemp'></img>
-                 </picture>
-
-                 <div className='info-texto-presentacion'>
+                
+                <div className='info-texto-presentacion'>
 
                     <div className='mi-info'>
                         <h1 className='mi-nombre'>CALEL SPRUMONT</h1>
                         <h1 className='mi-trabajo'>DESARROLADOR FULL STACK</h1>
-                        
-                    
+                    </div>
+
                     <div className='boton-presentacion'>
                         <button onClick={ abrirModalSobreMi }>Sobre Mí</button>
                     </div>
-                    </div>
-                    
+
                     <div className='frase-presentacion'>
                         <p>
                             El trabajo en equipo es un ejemplo de como el todo es más que la suma de las partes
                         </p>
                     </div>
 
-                </div>
+                 </div>
+
+                <picture className='contenedor-foto-presentacion'>
+                     <img src={presentacion} alt='Foto presentación' loading='lazy' className='foto-presentacion'></img>
+                 </picture>
             </div>
 
 

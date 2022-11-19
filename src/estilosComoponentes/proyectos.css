@@ -80,6 +80,22 @@
     }
 }
 
+
+
+@media screen and (max-width: 960px) {
+    .proyectos-header .proyectos-titulo{
+        color: #127043;
+        font-size: 1.2rem;
+        margin-top: 21%;
+        margin-bottom: 0;
+        font-family: 'Lato black', sans-serif;
+    }    
+}
+
+
+@media screen and (max-width: 480px){
+}
+
 /* .proyectos{
     width: 100vw;
     height: 100vh;

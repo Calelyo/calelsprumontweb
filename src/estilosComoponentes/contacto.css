@@ -211,6 +211,66 @@
     transition: 0.1s cubic-bezier(1, 1.65, 1, 1.76);
 }
 
+
+
+@media screen and (max-width: 960px){
+    .contacto-header .contacto-titulo{
+        color: #127043;
+        font-size: 1.2rem;
+        margin-top: 21%;
+        margin-bottom: 0;
+        font-family: 'Lato black', sans-serif;
+    }
+
+    .formulario{
+        padding: 1.5rem 0;
+        margin: 4vw 9vw;
+        margin-left: -15%;
+    }
+
+    .formulario form{
+        width: 45vw;
+        margin: 1vh 40%
+    }
+
+    .formulario form textarea{
+        height: 18vh;
+        margin-bottom: 0.5rem;
+    }
+
+    .boton-enviar{
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    .contenedor-iconos-contacto div{
+        margin: -16px 0px -8px;
+    }
+
+    .icono-contacto{
+        transform: scale(0.39);
+    }
+    
+    .contacto-email img {
+        transform: scale(0.48);
+        position: relative;
+    }
+    
+    .contacto-gitHub img{
+        transform: scale(0.43);
+        position: relative;
+        bottom: -5px;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 480px){
+
+}
+
+
 /* .contacto{
     width: 100vw;
     height: 100vh;

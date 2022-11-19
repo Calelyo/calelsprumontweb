@@ -41,7 +41,7 @@ export default function Contacto(){
 
                     <textarea className='input-formulario' type='text' name='mensaje' id='mensaje' placeholder='Mensaje' value={contenido} onChange={(e)=> setContenido(e.target.value)} required></textarea>
 
-                    <input type="hidden" name="_next" value="http://localhost:3000/"></input>
+                    <input type="hidden" name="_next" value="https://calelsprumont.web.app/"></input>
 
                     <input className='input-formulario boton-enviar' type='submit' value='Enviar'></input>
                 </form>

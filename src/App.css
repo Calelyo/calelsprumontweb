@@ -38,7 +38,7 @@ body::-webkit-scrollbar-track{
   position: fixed;
   width: 100%;
   z-index: 10;
-  /* height: 5.5rem; */
+  height: 5.5rem;
 }
 
 .barra-navegacion{
@@ -47,10 +47,9 @@ body::-webkit-scrollbar-track{
 
 .barra-navegacion ul{
   list-style: none;
-  display: inline-block; /* CENTRADO */
+  /* display: inline-block; */
   position: relative;
-  left: 15%;
-  /* margin-right: 10%; */
+  margin-right: 10%;
 }
 
 .barra-navegacion li{
@@ -86,6 +85,123 @@ body::-webkit-scrollbar-track{
 
   visibility: visible;
 }
+
+.contenedor-hamburguesa img{
+  visibility: hidden;
+}
+
+
+
+@media screen and (max-width: 960px){
+
+  .barra-navegacion ul {
+    transform: rotate(180deg);
+
+    /* position: fixed; */
+    text-align: start;
+    /* margin-right: 10%; */
+    margin: 88px -7px;
+    padding-top: 100%;
+    padding-bottom: 11px;
+    font-size: 1.3rem;
+    height: 100%;
+    width: 45%;
+    background: chocolate;
+    left: -60%;
+    
+    /* visibility: hidden; */
+    display: none;
+    z-index: 12;
+    transition: 0.2s linear;
+  }
+
+  .barra-navegacion li {
+    transform: rotate(180deg);
+
+    margin: 2.5rem 2rem;
+    float: none;
+  }
+
+  .App-header{
+    background-color: #6035d6;
+    /* position: relative; */
+  }
+
+  .contenedor-hamburguesa{
+    /* border: solid 1px; */
+    /* border: solid 1px red; */
+  }
+
+  .contenedor-hamburguesa img{
+    /* border: solid 1px; */
+    width: 12%;
+    position: absolute;
+    right: 3rem;
+    top: 1rem;
+  }
+  
+  .contenedor-hamburguesa .hamburguesa{
+    /* border: solid 1px; */
+    visibility: visible;
+  }
+
+  .contenedor-hamburguesa .hamburguesa-cierre{
+    visibility: hidden;
+  }
+
+  .cerrar-menu{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0, 0);
+    display: flex;
+    position: fixed;
+    z-index: 11;
+  
+    visibility: hidden;
+  }
+  
+  .cerrar-menu.menu-abierto{
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: 0.2s linear;
+    transition: 0.2s linear;
+  }
+
+  .App-header.responsive .barra-navegacion ul {
+    left: 0;
+    display: block;
+    visibility: visible;
+  }
+
+  .App-header.responsive .hamburguesa{
+    visibility: hidden;
+  }
+
+  .App-header.responsive .hamburguesa-cierre{
+    visibility: visible;
+  }
+
+}
+
+@media screen and (max-width: 480px){
+  
+}
+
+
+/* @media screen and (max-width: 1328px) and (min-width: 1024px) {
+  
+    .App-header{
+        background-color: #6035d6;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        height: 5.5rem;
+
+} */
+
+
+
+
 
 /*
 
