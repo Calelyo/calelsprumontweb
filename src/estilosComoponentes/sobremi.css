@@ -14,11 +14,11 @@
 .modalsobremi{
     position: relative;
     display: flex;
-    background-color: #281ca7;
+    background-color: #047446;
     color: white;
     overflow: auto;
-    width: 78vw;
-    height: 47vh;
+    width: 65vw;
+    height: 30vw;
     padding: 0vw 5vw;
     padding-left: 0;
     border-radius: 18px;
@@ -36,43 +36,47 @@
     right: 1rem;
     transform: scale(0.4);
     cursor: pointer;
+    filter: brightness(2);
 }
 
 .cerrarmodal:hover{
     transform: scale(0.45);
-    filter: drop-shadow(-2px 4px 4px black);
     transition: 0.1s linear;
+    filter: brightness(2);
 }
 
-/* .sobremi{
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
-    display: none;
+
+@media screen and (max-width: 960px){
+    .modalsobremi{
+        width: 75vw;
+        height: 75vh;
+    }
+
+    .cerrarmodal{
+        filter: brightness(0);
+        z-index: 1;
+    }
 }
 
-.sobremi.modalabierto{
-    display: flex;
-    animation: fondoNegroAnim 0.2s linear;
+@media screen and (max-width: 480px){
+    .modalsobremi{
+        width: 80vw;
+        height: 78vh;
+    }
+
+    .cerrarmodal{
+        transform: scale(0.2) translate(8rem, -6rem);
+        filter: brightness(0);
+        z-index: 1;
+    }
 }
 
-.modalsobremi{
-    position: relative;
-    display: flex;
-    background-color: #281ca7;
-    color: white;
-    overflow: auto;
-    width: 60vw;
-    height: 60vh;
-    padding: 0vw 5vw;
-    border-radius: 18px;
-    animation: modalAnim 0.2s cubic-bezier(0.45, 0.20, 0.6, 1);;
+
+
+@media screen and (max-width: 1366px) and (min-width: 961px){
+    .modalsobremi{
+        width: 75vw;
+    }
 }
 
 @keyframes modalAnim {
@@ -93,58 +97,23 @@
     }
 }
 
-@media screen and (max-width: 1400px) and (min-height: 900px){
-    .modalsobremi{
-        width: 55%;
-        width: 75vw;
-        height: 55vh;
+/* 
+@keyframes modalAnim {
+    0%{
+        top: -50rem;
+    }
+    100%{
+        top: 0;
     }
 }
 
-@media screen and (max-width: 1000px) and (min-width: 751px){
-    .modalsobremi{
-        width: 60vw;
-        height: 75vh;
-        padding-top: 5vh;
-        padding-bottom: 0vh;
+@keyframes fondoNegroAnim {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
     }
 }
 
-@media screen and (max-width: 750px){
-    .modalsobremi{
-        width: 72vw;
-        height: 72vh;
-        padding-top: 5vh;
-        padding-bottom: 0vh;
-    }
-}
-
-@media screen and (max-height: 800px){
-    .modalsobremi{
-        width: 60vw;
-        height: 70vh;
-    }
-
-    @media screen and (max-width: 1000px){
-        .modalsobremi{
-            width: 29vw;
-            height: 70vh;
-            padding: 1.2rem 4.8rem;
-            margin-top: 1.8rem;
-        }
-    }
-}
-
-.cerrarmodal{
-    position: absolute;
-    top: 0rem;
-    right: 1rem;
-    transform: scale(0.4);
-    cursor: pointer;
-}
-
-.cerrarmodal:hover{
-    transform: scale(0.45);
-    filter: drop-shadow(-2px 4px 4px black);
-    transition: 0.1s linear;
-} */
+*/

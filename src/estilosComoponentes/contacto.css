@@ -10,7 +10,7 @@
 }
 
 .contacto-header .contacto-titulo{
-    color: #35d688;
+    color: var(--verde-oscuro);
     font-size: 3rem;
     margin-top: 7%;
     margin-bottom: 0;
@@ -19,24 +19,19 @@
 }
 
 .formulario{
-    background-color: rgb(54 23 126);
-    margin: 3vw 30vw;
+    background-color: var(--violeta-oscuro);
+    margin: 3vw 50vw;
     margin-left: -7%;
     padding: 3rem 3rem;
     height: 46%;
     border-radius: 5rem;
 
-    padding-left: 40%;
+    padding-left: 25%;
 }
 
 .formulario form{
-    /* margin-left: 60%; */
-
-    /* position: relative; */
-    /* align-items: center; */
     width: 25vw;
     margin: 1vh auto;
-    /* background-color: rgb(255 255 255 / 0%); */
 }
 
 .input-formulario{
@@ -92,7 +87,7 @@
     margin: 0px 36%;
     cursor: pointer;
     border: none;
-    background-color: #721AD8;
+    background-color: var(--violeta-claro);
     border-radius: 10px;
     box-shadow: 0px 4px 1px #45094F;
 }
@@ -132,7 +127,7 @@
 }
 
 .contenedor-iconos-contacto{
-    background-color: rgb(47 37 112);
+    background-color: var(--violeta-oscuro);
     position: absolute;
     display: flex;
     justify-content: center;
@@ -215,16 +210,16 @@
 
 @media screen and (max-width: 960px){
     .contacto-header .contacto-titulo{
-        color: #127043;
-        font-size: 1.2rem;
-        margin-top: 21%;
+        font-size: 3.5rem;
+        margin-top: 18%;
         margin-bottom: 0;
         font-family: 'Lato black', sans-serif;
     }
 
     .formulario{
-        padding: 1.5rem 0;
-        margin: 4vw 9vw;
+        padding: 1.5rem 0px 0rem;
+        padding-top: 10rem;
+        margin: 5vw 9vw;
         margin-left: -15%;
     }
 
@@ -233,12 +228,66 @@
         margin: 1vh 40%
     }
 
+    .input-formulario{
+        font-size: 1.5rem;
+    }
+
     .formulario form textarea{
         height: 18vh;
         margin-bottom: 0.5rem;
     }
 
     .boton-enviar{
+        padding: 8px;
+        font-size: 1.5rem;
+    }
+
+    .contenedor-iconos-contacto div{
+        margin: 2rem 2rem 2rem;
+    }
+
+    .icono-contacto{
+        transform: scale(0.9);
+    }
+    
+    .contacto-email img {
+        transform: scale(1);
+        position: relative;
+    }
+    
+    .contacto-gitHub img{
+        transform: scale(1);
+        position: relative;
+        bottom: -5px;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 480px){
+    .contacto-header .contacto-titulo{
+        font-size: 1.2rem;
+        margin-bottom: 0;
+        /* margin-top: 21%; */
+        margin-top: 7rems;
+        font-family: 'Lato black', sans-serif;
+    }
+
+    .formulario{
+        padding: 1.5rem 0;
+        padding-top: 1.5rem;
+        margin: 4vw 9vw;
+        margin-left: -19%;
+    }
+
+    .input-formulario{
+        font-size: 0.9rem;
+    }
+    
+    .boton-enviar{
+        width: 35%;
+        margin: 0px 33%;
         padding: 0;
         font-size: 1rem;
     }
@@ -264,265 +313,49 @@
     
 }
 
-
-
-@media screen and (max-width: 480px){
-
-}
-
-
-/* .contacto{
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-}
-
-.contactoHeader{
-    padding-top: var(--padding-header-componente);
-}
-
-.contactoHeader h1{
-    margin-left: 5.5vw;
-    font-size: 1.8rem;
-    color: white;
-    text-decoration: underline;
-    text-decoration-thickness: from-font;
-    text-decoration-style: double;
-    font-weight: 100;
-}
-
-.formulario form{
-    position: relative;
-    align-items: center;
-    width: 25vw;
-    margin: 10vh auto;
-    background-color: rgb(255 255 255 / 0%);
-}
-
-.inputForm{
-    text-align: start;
-    color: rgba(255, 255, 255);
-    font-size: 0.9rem;
-    line-height: 1.7rem;
-    background-color: rgba(255, 255, 255, 0);
-    border: rgb(47 37 112 / 70%) solid 4px;
-    box-shadow: 0px 0px 10px 0px rgb(97 85 175), 0px 0px 3px 0px rgb(130 116 225) inset;
-    border-radius: 8px;
-    padding: 0.6rem 0.4rem;
-    margin-bottom: 1rem;
-    width: 100%;
-    box-sizing: border-box;
-    font-family: 'Lato';
-}
-
-.inputForm:focus,
-.inputForm:active{
-    background-color: rgb(32 60 132 / 35%);
-    outline: none;
-    transition: 0.2s linear;
-    border: rgb(47 37 112) solid 5px;
-    box-shadow: 0px 0px 0px 0px rgb(97 85 175);
-}
-.inputForm::placeholder{
-    color: rgba(255, 255, 255, 0.5);
-}
-
-form textarea{
-    height: 25vh;
-    line-height: 150%;
-    resize: vertical;
-}
-
-.inputForm::placeholder{
-    text-align: center;
-}
-
-.inputForm:-webkit-autofill,
-.inputForm:-webkit-autofill:hover,
-.inputForm:-webkit-autofill:focus,
-.inputForm:-webkit-autofill:active {
-    transition: background-color 5000s ease-in-out 0s;
-    -webkit-text-fill-color: white;
-}
-
-.botonEnviar{
-    text-align: center;
-    width: 30%;
-    padding: .5rem;
-    font-size: 1.2rem;
-    margin: 0px 36%;
-    cursor: pointer;
-    border: none;
-    background-color: rgb(76, 67, 134);
-    border: rgb(47 37 112) solid 1px;
-    border-radius: 10px;
-    box-shadow: -1px 2px 9px #00000045;
-}
-
-.botonEnviar:hover{
-    background-color: rgb(93, 82, 165);
-    box-shadow: -1px 3px 4px 1px #0000009d;
-    transform: scale(1.01);
-    transition: 0.08s linear;
-}
-
-.botonEnviar:active,
-.botonEnviar:focus{
-    background-color: rgb(103, 85, 221);
-    box-shadow: 0px 0px 0px 0px;
-    bottom: -2px;
-    transform: scale(1.01);
-    transition: 0.08s linear;
-    border: rgb(47 37 112) solid 1px;
-}
-
-
-.contenedorIconosContacto{
-        background-color: rgb(47 37 112);
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        width: 100vw;
-        bottom: 0;
-}
-
-.contenedorIconosContacto div{
-    margin: 0px 5% 0px;
-    box-shadow: black 0px 8px 0px 0px;
-}
-
-.contenedorIconosContacto div:hover,
-.contenedorIconosContacto div:active,
-.contenedorIconosContacto div:focus{
-    box-shadow:  black 0px 8px 9px 0px;
-    transition: 0.1s linear;
-    cursor: pointer;
-}
-
-.iconoContacto{
-    transform: scale(0.5);
-    position: relative;
-    bottom: -0.5rem;
-}
-
-.contenedorIconosContacto div p{
-    color: rgb(0, 0, 0);
-    margin: 0 0 0.8rem 0;
-    position: relative;
-    bottom: 1.3rem;
-}
-
-.contactoEmail img {
-    transform: scale(0.6);
-    position: relative;
-}
-
-.contactoGitHub img{
-    transform: scale(0.52);
-    position: relative;
-    bottom: -5px;
-}
-
-.contactoEmail::before{
-    content: 'calelyo@gmail.com';
-    position: absolute;
-    bottom: 4.8rem;
-    font-size: 0;
-    color: white;
-    visibility: hidden;
-    transition: 0.2s ease-in-out;
-}
-
-.contactoEmail:hover::before{
-    visibility: visible;
-    filter: drop-shadow(0px 5px 1px black);
-    bottom: 7.3rem;
-    font-size: 0.75rem;
-    text-decoration: underline;
-}
-
-.contactoEmail:hover img,
-.contactoEmail:active img,
-.contactoEmail:focus img {
-    transform: scale(0.65);
-    transition: 0.1s cubic-bezier(1, 1.65, 1, 1.76);
-}
-
-.contactoGitHub:hover img,
-.contactoGitHub:active img,
-.contactoGitHub:focus img{
-    transform: scale(0.58);
-    transition: 0.1s cubic-bezier(1, 1.65, 1, 1.76);
-}
-
-.contactoLinkedIn:hover img,
-.contactoLinkedIn:active img,
-.contactoLinkedIn:focus img{
-    transform: scale(0.55);
-    transition: 0.1s cubic-bezier(1, 1.65, 1, 1.76);
-}
-
-.diagonal2 {
-    height: 100%;
-    width: 100%;
-    background-color: rgb(253 253 253 / 10%);
-    position: absolute;
-    transform: skewY(320deg);
-}
-
-@media screen and (max-width: 1000px) and (min-width: 751px) {
-    .formulario form{
-        width: 40vw;
+@media screen and (max-width: 1366px) and (min-width: 961px) {
+    .contacto-header .contacto-titulo{
+        margin-top: 8%;
+        margin-bottom: 1%;
     }
-}
 
-@media screen and (max-width: 750px) {
-    .formulario form{
-        width: 60vw;
+    .formulario{
+        margin: 1vw 50vw;
+        margin-left: -7%;
+        padding: 3rem 3rem;
+        padding-top: 1rem;
+        height: 36%;
+        border-radius: 3rem;
+        padding-left: 25%;
     }
-}
 
-@media screen and (max-height: 800px) {
-    .formulario form{
-        margin: 0vh auto;
+    .input-formulario{
+        margin-bottom: 0.5rem;
     }
 
     .formulario form textarea{
-        height: 20vh;
+        height: 16vh;
+        margin-bottom: 0.2rem;
     }
 
-    .contenedorIconosContacto div{
-        margin: -0.8rem 5% -0.8rem;
+    .contenedor-iconos-contacto div{
+        margin: -1.8rem 5% 0px;
     }
 
-    .contactoEmail img {
-        transform: scale(0.5);
+    .icono-contacto{
+        transform: scale(0.33);
+        bottom: -1rem;
     }
     
-    .contactoGitHub img{
-        transform: scale(0.42);
-    }
-
-    .iconoContacto{
+    .contacto-email img {
         transform: scale(0.4);
-    }
-
-    .contenedorIconosContacto div{
-        margin: -1.3rem 5% -1.4rem;
         position: relative;
-        top: 0px;
-        transform: scale(0.6);
+        bottom: -1rem;
+    }
+    
+    .contacto-gitHub img{
+        transform: scale(0.39);
+        position: relative;
+        bottom: -0.9rem;
     }
 }
-
-@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    .contenedorIconosContacto div {
-        height: 15vh;
-    }
-
-    .botonEnviar{
-        width: 35%;
-    }
-} */

@@ -15,8 +15,9 @@ export default function Contacto(){
     const [contenido, setContenido] = useState('');
     
     function enviarMail(){
-        return "https://formsubmit.co/" + miCorreo
+        return "https://formsubmit.co/" + 'b295c99260179911e423ae28877b5c6f'
         // b295c99260179911e423ae28877b5c6f
+        // miCorreo
     }
 
     function mail(){
