@@ -17,7 +17,7 @@ export default function Presentacion(){
 
                     <div className='mi-info'>
                         <h1 className='mi-nombre'>CALEL SPRUMONT</h1>
-                        <h1 className='mi-trabajo'>DESARROLLsADOR FULL STACK</h1>
+                        <h1 className='mi-trabajo'>DESARROLLADOR FULL STACK</h1>
                     </div>
 
                     <div className='boton-presentacion'>
